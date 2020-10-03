@@ -8,9 +8,23 @@ namespace BookStoreApp.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        //public string Index()
+        //{
+        //    return "Hello from Controller";
+        //}
+        public ViewResult Index()
         {
-            return "Hello from Controller";
+            var obj = new { Id = 1, Name = "Soumya" };
+            return View();
         }
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+        public ViewResult ContactUs()
+        {
+            return View();
+        }
+        
     }
 }
