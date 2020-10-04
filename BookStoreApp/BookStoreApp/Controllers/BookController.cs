@@ -25,10 +25,11 @@ namespace BookStoreApp.Controllers
         //}
         public ViewResult GetallBooks()
         {
-            var data= _bookRepository.GetAllBooks();
+            var data = _bookRepository.GetAllBooks();
+
             return View(data);
         }
-        public ViewResult GetBook(int id)
+        public ViewResult GetBook(int id,string name)
         {
             var data = _bookRepository.GetBookById(id);
             return View(data);

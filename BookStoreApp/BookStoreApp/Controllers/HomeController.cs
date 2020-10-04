@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BookStoreApp.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,9 @@ namespace BookStoreApp.Controllers
         //{
         //    return "Hello from Controller";
         //}
+       
         public ViewResult Index()
         {
-            var obj = new { Id = 1, Name = "Soumya" };
             return View();
         }
         public ViewResult AboutUs()
